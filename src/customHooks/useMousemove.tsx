@@ -5,7 +5,7 @@ const useMousemove = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = throttle((e) => {
+    const handleMouseMove = throttle((e:MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     }, 16); 
 
