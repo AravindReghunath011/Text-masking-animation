@@ -7,7 +7,7 @@ const useMousemove = () => {
   useEffect(() => {
     const handleMouseMove = throttle((e) => {
       setPosition({ x: e.clientX, y: e.clientY });
-    }, 16); // Throttle to roughly 60fps
+    }, 16); 
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
