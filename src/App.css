@@ -1,0 +1,56 @@
+.main{
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #000;
+  color: #b8a2a2;
+}
+
+.body,.mask{
+  width:100%;
+  font-size: 3rem;
+  font-weight: 800;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    width: 60%;
+  }
+
+}
+
+
+/* .mask,.body{
+  font-size: 3rem;
+  max-width: 60%;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  
+} */
+ .body{
+  span{
+    color: #e80b0b;
+  }
+ }
+
+.mask{
+  background: lightblue;
+
+  position: absolute;
+  background: #e80b0b;
+  mask-image: url('./mask.svg');
+  mask-size:40px;
+  mask-repeat: no-repeat;
+  color: black;
+  
+  
+} 
